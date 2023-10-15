@@ -54,7 +54,7 @@ export default function MonitoringMedication ({ route }) {
               {
                 id: 'medicationsReportsData_1',
                 day: 1,
-                date: new Date().toISOString()
+                date: new Date().toLocaleString()
               }
             ]
           } else {
@@ -107,7 +107,7 @@ export default function MonitoringMedication ({ route }) {
         <BtnAdd onPress={handleAddMedicationReport} />
         {medicationReports.length === 0
           ? (
-            <Text>Todavía no tienes reportes.</Text>
+            <Text style={{ fontSize: 20 }}>Todavía no tienes reportes.</Text>
             )
           : (
             <FlatList

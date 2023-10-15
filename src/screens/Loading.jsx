@@ -30,7 +30,7 @@ const Loading = ({ navigation }) => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Cargando...</Text>
-      <ActivityIndicator size='large' />
+      <ActivityIndicator size='large' color='#159A8A' />
     </View>
   )
 }

@@ -48,14 +48,16 @@ export default function MedicationList () {
 
   const renderItem = ({ item }) => {
     return (
-      <TouchableOpacity
-        style={styles.medicationItem}
-        onPress={() => navigation.navigate('MonitoringMedication', { medicationId: item.id })}
-        onLongPress={() => handleDeleteItem(item.id)}
-      >
-        <Text style={styles.cardMedicationNameText}>{item.medicationName}</Text>
-        <Text style={styles.cardMedicationQuantityText}>Te quedan {item.quantity} unidades</Text>
-      </TouchableOpacity>
+      <View>
+        <TouchableOpacity
+          style={styles.medicationItem}
+          onPress={() => navigation.navigate('MonitoringMedication', { medicationId: item.id })}
+          onLongPress={() => handleDeleteItem(item.id)}
+        >
+          <Text style={styles.cardMedicationNameText}>{item.medicationName}</Text>
+          <Text style={styles.cardMedicationQuantityText}>Te quedan {item.quantity} unidades</Text>
+        </TouchableOpacity>
+      </View>
     )
   }
 
@@ -83,7 +85,6 @@ export default function MedicationList () {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 70,
     width: '80%'
   },
   medicationItem: {

@@ -53,9 +53,7 @@ const styles = StyleSheet.create({
   welcomeTextContainer: {
     flexDirection: 'row',
     alignSelf: 'flex-start',
-    padding: 20,
-    position: 'absolute',
-    top: 20
+    padding: 20
   },
   welcomeText: {
     fontSize: 30,
