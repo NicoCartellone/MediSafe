@@ -107,7 +107,7 @@ export default function MonitoringMedication ({ route }) {
         <BtnAdd onPress={handleAddMedicationReport} />
         {medicationReports.length === 0
           ? (
-            <Text style={{ fontSize: 20 }}>Todavía no tienes reportes.</Text>
+            <Text style={{ fontSize: 20, textAlign: 'center' }}>Todavía no tienes reportes.</Text>
             )
           : (
             <FlatList
@@ -129,10 +129,12 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     marginTop: 20
   },
   reportItem: {
+    flex: 1,
+    alignSelf: 'center',
+    width: '80%',
     padding: 20,
     backgroundColor: '#159A8A',
     marginBottom: 10,

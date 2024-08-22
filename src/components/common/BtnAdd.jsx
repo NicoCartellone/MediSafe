@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   btnAddContainer: {
     position: 'absolute',
     bottom: 40,
-    right: 40,
+    right: 20,
     zIndex: 100
   },
   btnAdd: {
